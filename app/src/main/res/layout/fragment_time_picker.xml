@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <NumberPicker
+        android:id="@+id/hour_number_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text_size"
+        android:gravity="center_vertical"
+        android:text="  :  "
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@id/hour_number_picker"
+        android:layout_toRightOf="@id/hour_number_picker"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+
+    <NumberPicker
+        android:id="@+id/minute_number_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/space"
+        android:layout_alignRight="@id/space"
+        tools:ignore="RtlHardcoded" />
+
+
+
+</RelativeLayout>

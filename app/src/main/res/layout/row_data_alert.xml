@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/small_spacing">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_spacing"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/logo_character_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/border_image"
+            android:contentDescription="@string/logo_character"
+            android:src="@drawable/love_you_so_sexy_toady" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/alert_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="15:32"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:textSize="@dimen/big_text_size" />
+
+
+
+        <!--max 60 char-->
+
+        <TextView
+            android:id="@+id/days_alert_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The most Good Alert"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_alignStart="@id/alert_time_text_view"
+            android:layout_below="@id/alert_time_text_view"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/normal_text_size"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Switch
+            android:id="@+id/on_off_alert_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>
