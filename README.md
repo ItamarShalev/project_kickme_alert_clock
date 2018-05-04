@@ -6,7 +6,7 @@ Stage : In process
 
 Company : KickMe
 
-Multi-site alarm clock with giff animations instead of normal ringtone
+Description : Multi-site alarm clock with giff animations instead of normal ringtone
 
 
 
